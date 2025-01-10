@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,5 +9,41 @@
     <h1>Hello, World!</h1>
     <p>This is a simple HTML page served by Node.js.</p>
     <p>This is a fisrtgnsxnsfgnsgngzf</p>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Register</title>
+</head>
+<body>
+    <h1>Welcome</h1>
+
+    <!-- Registration Form -->
+    <h2>Register</h2>
+    <form action="/register" method="POST">
+        <label for="register-username">Username:</label>
+        <input type="text" id="register-username" name="username" required>
+        <br>
+        <label for="register-password">Password:</label>
+        <input type="password" id="register-password" name="password" required>
+        <br>
+        <button type="submit">Register</button>
+    </form>
+
+    <!-- Login Form -->
+    <h2>Login</h2>
+    <form action="/login" method="POST">
+        <label for="login-username">Username:</label>
+        <input type="text" id="login-username" name="username" required>
+        <br>
+        <label for="login-password">Password:</label>
+        <input type="password" id="login-password" name="password" required>
+        <br>
+        <button type="submit">Login</button>
+    </form>
 </body>
 </html>
